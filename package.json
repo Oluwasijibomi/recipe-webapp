@@ -1,0 +1,26 @@
+{
+  "name": "recipe",
+  "version": "1.0.0",
+  "description": "recipe webapp",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oluwasijibomi/recipe-webapp.git"
+  },
+  "author": "hafeez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oluwasijibomi/recipe-webapp/issues"
+  },
+  "homepage": "https://github.com/Oluwasijibomi/recipe-webapp#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
+    "parcel": "^2.0.0-beta.2",
+    "sass": "^1.32.11"
+  },
+  "dependencies": {}
+}
