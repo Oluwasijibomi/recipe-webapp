@@ -29,10 +29,32 @@ class RecipeView {
               </svg>
             </div>
           `
-        this.#parentElement.innerHTML = "";
+        this.#clear();
         this.#parentElement.insertAdjacentHTML("afterbegin", markup);
       
       };
+
+      renderError(message) {
+        const markup = ` 
+        <div class="error">
+          <div>
+            <svg>
+              <use href="src/img/${icons}#icon-alert-triangle"></use>
+            </svg>
+          </div>
+          <p>${message}</p>
+        </div>
+        `
+
+        this.#clear();
+        this.#parentElement.insertAdjacentHTML("afterbegin", markup);
+      
+      }
+
+      addHanderRender(handler) {
+        window.addEventListener("hashchange", controlRecipes);
+        window.addEventListener("load", controlRecipes);
+      }
 
      #generateMarkup() {
         return `<figure class="recipe__fig">
